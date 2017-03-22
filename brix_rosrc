@@ -1,0 +1,16 @@
+# To Run ROS Locally (No Network)
+#source set_ros_master localhost
+
+# To Set Plane as Master for Network
+source set_ros_master 192.168.0.102
+export ROS_HOSTNAME=192.168.0.102
+export ROS_MASTER_URI=http://192.168.0.102:11311
+export ROS_IP=192.168.0.102
+
+export ROSLAUNCH_SSH_UNKNOWN=1
+
+# ROS WORKSPACE
+source /opt/ros/indigo/setup.bash
+
+
+

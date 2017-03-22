@@ -1,0 +1,13 @@
+# TO RUN ROS LOCALLY
+#source set_ros_master localhost
+
+# TO SET PLANE AS MASTER
+source set_ros_master 192.168.0.102
+export ROS_IP=192.168.0.100 # YOUR IP ADDRESS
+export ROS_HOSTNAME=192.168.0.100 # YOUR IP ADDRESS
+
+export ROSLAUNCH_SSH_UNKNOWN=1
+
+# ROS_WORKSPACE
+source /opt/ros/kinetic/setup.bash
+
