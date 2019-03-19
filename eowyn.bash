@@ -14,6 +14,8 @@ function ros_local() {
     env | grep ROS_IP
 }
 
+alias send_to_plane="git push && hub pull-request -b plane -m"
+
 function drop_bomb() {
     rosservice call /arm_bomb
     sleep 0.5
